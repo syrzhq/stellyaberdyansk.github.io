@@ -1,0 +1,240 @@
+header{
+	width: 100%;
+	background-image:url(13.jpg);
+	-moz-background-size: 100%; /* Firefox 3.6+ */
+    -webkit-background-size: 100%; /* Safari 3.1+ и Chrome 4.0+ */
+    -o-background-size: 100%; /* Opera 9.6+ */
+    background-size: 100%; /* Современные браузеры */
+	height: 370px;
+	margin:0px;
+}
+
+.logo{
+	width:700px;
+	height:250px;	
+}
+.logom{
+	display: grid;
+	grid-template-columns: 1fr;
+	align-self: center;
+	justify-items:center;
+}
+	/*.footer{
+		position:bottom;
+	}*/
+	/*	.footer{
+	position:bottom ; 
+    left: 0; 
+	bottom: 0; 
+	margin:0;
+    color: #FF7B98; 
+	background-color:#621226;
+    width: 100%;
+}*/
+head{
+	padding:0; margin:0;
+}
+body{
+ margin:0;
+}
+
+	.logo2{
+		text-align: center;
+		font-family:Times, Times New Roman, serif;
+		font-weight: 500;
+		font-size:40px;
+		color:#FFEDF1;
+		margin-top:0px;
+			letter-spacing:4px;
+			margin-left:50px;
+	}
+.menu{
+	
+	list-style: none;
+     margin: 0px 0 5px;
+     padding: 15px 0 0px;
+     text-align: center;
+     background:#BB2247;
+	
+}
+.menu li {display: inline-block;}
+.menu li:after {
+  content: "|";
+  color: #606060;
+  display: inline-block;
+  vertical-align:top;
+}
+.menu li:last-child:after {content: none;}
+.menu a {
+  text-decoration: none;
+  font-family: 'Ubuntu Condensed', sans-serif;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 20px;
+  margin: 0 34px 0 30px;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  transition: color .2s;
+}
+.menu a, .menu a:visited {color: white;}
+.menu a.current, .menu a:hover{color: black;}
+.menu a:before,
+.menu a:after {
+  content: "";
+  position: absolute;
+  height: 4px;
+  top: auto;
+  right: 50%;
+  bottom: 5px;
+  left: 50%;
+  background: #feb386;
+  transition: .8s;
+}
+.menu a:hover:before, .menu .current:before {left: 0;}
+.menu a:hover:after, .menu .current:after {right: 0;}   
+@media (max-width: 550px) {
+.menu {padding-top: 0;}
+.menu li {display: block;}
+.menu li:after {content: none;}
+.menu a {
+  padding: 25px 0 20px; 
+  margin: 0 30px;
+	}	
+}
+.map{
+	clip-path: polygon(0 100%, 50% 0, 100% 100%);
+
+}
+.mainblockCont{
+	display:grid;
+	grid-template-columns: 1fr 1fr ;
+	grid-gap:1em;
+	margin: 3em; 
+	justify-items:center;
+	background-color:#D8D8D8 ;
+}
+.h3h4{
+	float:left;
+	position:relative;
+	
+}
+
+
+#h3c {
+	text-align:left;
+	width:500px;
+	float:left;
+	letter-spacing:4px;
+	font-family:Times, Times New Roman, serif;
+	padding:2em;
+}
+#h4c{
+	text-align:left;
+	width:400px;
+	float:left;
+	font-stretch: ultra-expanded;
+	font-family:Times, Times New Roman, serif;
+	font-weight: 500;
+	padding:2em;
+}
+#h2c{
+	color:#B11E41;
+	font-weight: normal;
+	font-family:Times, Times New Roman, serif;
+	font-size:40px;
+	letter-spacing:4px;
+	text-align: center;
+}
+footer{
+	margin-top: 4em;
+	padding: 1em;
+	display: grid;
+	grid-template-columns: 1fr ;
+	justify-items: center;
+	background:rgb(97, 18, 36);
+	
+}
+.foot{
+color: rgb(250, 157, 173) ;
+}
+.footlogo{
+	margin: 10px;
+	width:150px;
+	height: 70px;
+}
+
+/* MAIN BLOCK*/
+#mainblockMain{
+
+	background-color:#D8D8D8 ;
+}
+#h2m{
+	text-align:center;
+	font-weight: normal;
+	font-family:Times, Times New Roman, serif;
+	font-size:40px;
+	letter-spacing:4px;
+	color: rgb(153, 63, 86);
+}
+.h4m{
+	font-family:Times, Times New Roman, serif;
+	font-weight: 500px;
+	text-align:center;
+	font-size:19px;
+/*	width:50em;   */					/*!!!!!!!!!!!!!!!!!*/
+	/*content: "/";*/
+	float:center;
+	color:rgb(97, 73, 78);
+}
+/*.h4m:after{display:inline-block;
+	content: "//";
+	color: #606060;
+}*/
+#h3m{
+	text-align:center;
+	letter-spacing:4px;
+	font-family:Times, Times New Roman, serif;
+}
+/* Gallery */
+.mainblockG{
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	justify-items: center;
+	grid-gap:0.5em;
+}
+.gallery{
+	width: 40em;
+	height:25em;
+}
+/* About us*/
+.mainblockAu {
+	display: grid;
+	grid-template-columns: 1fr 1fr ;
+	justify-items: center;
+	grid-gap:0.5em;
+}
+.h3a{
+	letter-spacing:4px;
+	width:500px;
+	font-family:Times, Times New Roman, serif;
+	color: rgb(102, 53, 65);
+	font-size:30px ;
+}
+.h2a{
+	text-align: center;
+	color: rgb(102, 53, 65);
+	letter-spacing:4px;
+	font-family:Times, Times New Roman, serif;
+	font-size:37px ;
+}
+.h4a{
+	width:500px;
+	letter-spacing:4px;
+	font-family:Times, Times New Roman, serif;
+
+}
+.galleryAu{
+	width: 33em;
+	height:25em;
+}
